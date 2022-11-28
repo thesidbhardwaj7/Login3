@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url("blob-haikei.svg");
+    color: #f9f9f9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+}
+
+@media (width>=500px) {
+    body {
+        padding: 0;
+    }
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 90%;
+    padding: 70px 30px 44px;
+    background-color: #000;
+    text-align: center;
+    border-radius: 20px;
+}
+
+@media (width >=450px) {
+    .container {
+        width: 380px;
+    }
+}
+
+.avtar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #161616;
+}
+
+.avtar {
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    padding: 2px;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(#EA4335, #4285FA, #34A853, #fbbc05);
+}
+
+hr {
+    background-color: #EA4335;
+    border: none;
+    height: 2px;
+}
+
+.container>h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 0 1px;
+}
+
+.container>p {
+    color: rgb(0, 200, 255);
+    margin: 0 0 30px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.login-form {
+    display: grid;
+    gap: 16px;
+    place-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.box {
+    width: 100%;
+    position: relative;
+}
+
+.box span {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    translate: 0 -51%;
+    color: rgb(112, 112, 112);
+}
+
+.login-form input,
+.login-form button {
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    outline: none;
+    font-family: inherit;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.login-form input {
+    background: transparent;
+    border: 2px solid rgb(157, 157, 157);
+    font-size: 18px;
+    padding: 0 20px 0 50px;
+    color: inherit;
+}
+
+.login-form input:focus {
+    border-color: #15ff00;
+}
+
+.login-form button {
+    cursor: pointer;
+    background: #15ff00;
+    border: 0;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+}
+
+.login-form a {
+    color: #4285FA;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.login-form p a {
+    color: red;
+}
